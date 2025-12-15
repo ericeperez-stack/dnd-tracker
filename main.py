@@ -299,10 +299,11 @@ def main(page: ft.Page):
     
     # CORRECCIÓN AQUÍ: Usamos "grey900" (String) en vez de ft.colors.SURFACE_VARIANT
     page.appbar = ft.AppBar(
-        leading=ft.Icon("dnd_games"),
+        leading=ft.Icon("casino"),
         title=ft.Text("Iniciativa"),
         bgcolor="grey900", 
         actions=[ft.IconButton(icon="delete_forever", tooltip="Limpiar Combate", on_click=limpiar_todo)]
     )
 
-ft.app(target=main, view=ft.WEB_BROWSER, port=8080)
+
+ft.app(target=main)
